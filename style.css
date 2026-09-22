@@ -102,3 +102,49 @@ img {
   color: #64748b;
   padding: 10px;
 }
+
+/* =========================================
+   STYLING TABEL & KARTU BLOG
+   ========================================= */
+
+/* Mengatur Tabel agar Rata Tengah dan Punya Jarak */
+.tabel-blog {
+  width: 100%;
+  margin: 0 auto 30px auto;
+  border-collapse: separate;
+  border-spacing: 15px;            /* Jarak antar sel tabel (Box Model) */
+}
+
+.tabel-blog td {
+  vertical-align: top;             /* Agar konten di dalam sel rata atas */
+  width: 33%;                      /* Masing-masing kolom terbagi rata */
+}
+
+/* Desain Kartu di Dalam Tabel */
+.kartu-blog {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;          /* Box Model Border */
+  border-radius: 8px;
+  padding: 15px;                   /* Box Model Padding */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi Halus */
+}
+
+.kartu-blog img {
+  width: 100%;                     /* Gambar fleksibel mengikuti sel tabel */
+  max-width: 350px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.kartu-blog h4 {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Efek HOVER pada Kartu (Penugasan Wajib Modul) */
+.kartu-blog:hover {
+  transform: translateY(-5px);     /* Terangkat sedikit */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Bayangan lembut */
+}
