@@ -281,3 +281,21 @@ h1 {
   background-color: #c0392b;
   transform: translateY(-2px);
 }
+
+/* =========================================
+   STYLING GAMBAR ARTIKEL BLOG
+   ========================================= */
+.gambar-artikel {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.gambar-artikel:hover {
+  transform: scale(1.01);
+}
+
