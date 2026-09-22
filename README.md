@@ -27,15 +27,20 @@ An interactive personal website built using pure HTML without CSS. Ready and ver
 
 ```text
 tugashtml_Grace Valentine_3C/
-│
-├── asset/                    # Folder for images and media files
-├── about.html                # About page detailing personal profile
-├── blog_belum_jadi.html      # Temporary page for blog posts under development
-├── contacts.html             # Contact information page
-├── home.html                 # Additional home page content
-├── index.html                # Main homepage structure & entry point
-├── projects.html             # Showcase of personal projects
-└── README.md                 # Project documentation & GitHub Pages deployment guide
+|
+├── asset/                 # Folder penyimpanan gambar dan media
+├── about.html             # Halaman tentang profil pribadi
+├── blog_belum_jadi.html   # Halaman sementara untuk blog yang masih dibuat
+├── contacts.html          # Halaman informasi kontak
+├── dbms.html              # Artikel blog tentang Database Management System
+├── defld.html             # Artikel blog tentang definisi Literasi Digital
+├── erd.html               # Artikel blog tentang Entity Relationship Diagram
+├── home.html              # Konten tambahan untuk halaman utama
+├── index.html             # Halaman utama (entry point website)
+├── mr.html                # Artikel blog tentang Market Research
+├── pilld.html             # Artikel blog tentang 4 Pilar Literasi Digital
+├── projects.html          # Halaman daftar proyek pribadi
+└── README.md              # Dokumentasi proyek & panduan GitHub Pages
 ```
 
 ## GitHub Pages Deployment Guide
