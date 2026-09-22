@@ -394,3 +394,44 @@ img {
   color: #2980b9;
   transform: translateX(5px);     /* Teks geser ke kanan sedikit saat disorot */
 }
+
+/* =========================================
+   STYLING HALAMAN UTAMA (home.html)
+   ========================================= */
+
+/* Foto Profil dengan Dimensi & Hover Modul */
+.foto-profil {
+  width: 200px;                    /* Dimensi Width */
+  height: auto;
+  display: block;                  /* Agar bisa diposisikan ke tengah */
+  margin: 15px auto;               /* Box Model Margin Rata Tengah */
+  border-radius: 8px;              /* Lengkungan sudut */
+  border: 2px solid #ccc;          /* Box Model Border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi Halus */
+}
+
+/* Efek HOVER pada Foto Profil (Tugas Wajib Modul) */
+.foto-profil:hover {
+  transform: scale(1.05);           /* Membesar sedikit dari contoh modul */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Styling Daftar Pembelajaran */
+.daftar-belajar {
+  background-color: #f9f9f9;
+  padding: 15px 15px 15px 35px;   /* Box Model Padding */
+  border-left: 4px solid #3498db; /* Akses garis vertikal biru khas modul */
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.daftar-belajar li {
+  padding: 4px 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Efek HOVER pada Item Daftar */
+.daftar-belajar li:hover {
+  color: #2980b9;
+  transform: translateX(5px);     /* Geser kanan sedikit saat disorot */
+}
