@@ -2,24 +2,23 @@
    1. ELEMENT SELECTOR & RESET DASAR (Selector Jenis 1)
    ========================================================= */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif; /* Tipografi */
-  background-color: #f4f6f9;               /* Warna Latar Website */
-  color: #333333;                          /* Warna Teks Utama */
+  font-family: Arial, sans-serif;  /* Sesuai contoh modul */
+  background-color: #f4f6f9;       /* Warna latar lembut */
+  color: #333333;                  /* Warna teks utama */
   margin: 0;
   padding: 20px;
   line-height: 1.6;
 }
 
-/* Grouping Selector (Selector Jenis 2) */
+/* Grouping Selector untuk Judul (Selector Jenis 2) */
 h1, h2, h3 {
   color: #1e293b;
   text-align: center;
 }
 
 /* =========================================================
-   2. HOVER, TRANSITION & ANIMATION (Efek Interaktif)
+   2. ANIMATION & EFEK INTERAKTIF
    ========================================================= */
-/* Animations @keyframes (Animasi Otomatis Modul) */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -31,70 +30,23 @@ h1, h2, h3 {
   }
 }
 
-/* Terapkan Animasi pada Judul Utama */
 h1 {
   animation: fadeIn 1s ease-in-out;
 }
 
 /* =========================================================
-   3. FLEXBOX UNTUK NAVIGASI (Menejemen Layout Navigasi)
+   3. ID SELECTOR (#header & #footer) (Selector Jenis 3)
    ========================================================= */
-nav {
-  display: flex;                 /* Flex Container */
-  justify-content: center;       /* Rata Tengah Horisontal */
-  align-items: center;           /* Rata Tengah Vertikal */
-  gap: 15px;                     /* Jarak antar Link */
+#header {
   background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
 }
 
-nav a {
-  text-decoration: none;
-  color: #2563eb;
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 5px;
-  transition: all 0.3s ease;     /* Transisi Halus */
-}
-
-/* Efek HOVER pada Navigasi */
-nav a:hover {
-  background-color: #2563eb;
-  color: #ffffff;
-  transform: translateY(-2px);    /* Efek terangkat sedikit */
-}
-
-/* =========================================================
-   4. BOX MODEL & CLASS SELECTOR (Selector Jenis 3)
-   ========================================================= */
-/* Class Selector untuk Kontainer/Kartu Konten */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  
-  /* Penerapan BOX MODEL lengkap */
-  padding: 25px;                  /* Padding (Jarak Dalam) */
-  border: 1px solid #e2e8f0;      /* Border (Bingkai) */
-  border-radius: 10px;            /* Sudut Membulat */
-  margin-bottom: 20px;            /* Margin (Jarak Luar) */
-}
-
-/* Styling Gambar agar Responsif & Rapi */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 15px auto;
-  border-radius: 8px;
-}
-
-/* =========================================================
-   5. ID SELECTOR (Selector Jenis 4)
-   ========================================================= */
 #footer {
   text-align: center;
   margin-top: 30px;
@@ -103,186 +55,189 @@ img {
   padding: 10px;
 }
 
-/* =========================================
-   STYLING TABEL & KARTU BLOG
-   ========================================= */
-
-.tabel-blog {
-  width: 100%;
-  margin: 0 auto 30px auto;
-  border-collapse: separate;
-  border-spacing: 15px;            /* Jarak antar sel tabel (Box Model) */
+/* =========================================================
+   4. FLEXBOX UNTUK NAVIGASI (.menu)
+   ========================================================= */
+.menu {
+  display: flex;                   /* Flex Container dari Modul */
+  justify-content: center;         /* Rata tengah horizontal */
+  align-items: center;             /* Rata tengah vertikal */
+  gap: 20px;                       /* Jarak konsisten antar tautan */
+  margin-top: 15px;
 }
 
-.tabel-blog td {
-  vertical-align: top;             /* Agar konten di dalam sel rata atas */
-  width: 33%;                      /* Masing-masing kolom terbagi rata */
-}
-
-/* Desain Kartu di Dalam Tabel */
-.kartu-blog {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;          /* Box Model Border */
-  border-radius: 8px;
-  padding: 15px;                   /* Box Model Padding */
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi Halus */
-}
-
-.kartu-blog img {
-  width: 100%;                     /* Gambar fleksibel mengikuti sel tabel */
-  max-width: 350px;
-  height: auto;
+.menu a {
+  text-decoration: none;
+  color: #2563eb;                  /* Warna biru teks */
+  font-weight: bold;
+  padding: 8px 16px;
   border-radius: 5px;
+  transition: all 0.3s ease;       /* Transisi halus */
 }
 
-.kartu-blog h4 {
-  font-size: 14px;
-  color: #333;
-  margin-top: 10px;
+/* Efek HOVER pada Navigasi (Wajib Modul) */
+.menu a:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-/* Efek HOVER pada Kartu (Penugasan Wajib Modul) */
-.kartu-blog:hover {
-  transform: translateY(-5px);     /* Terangkat sedikit */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Bayangan lembut */
+/* =========================================================
+   5. CLASS SELECTOR & BOX MODEL UTAMA (.wadah) (Selector Jenis 4)
+   ========================================================= */
+.wadah {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  
+  /* Penerapan Box Model Lengkap */
+  padding: 25px;                   /* Padding */
+  border: 1px solid #e2e8f0;       /* Border */
+  border-radius: 10px;             /* Lengkungan */
+  margin-bottom: 20px;             /* Margin */
 }
 
-/* =========================================
-   STYLING KHUSUS PROYEK (projects.html)
-   ========================================= */
+/* =========================================================
+   6. STYLING HOME & PROFIL (home.html & about.html)
+   ========================================================= */
+.foto-profil {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-/* Tabel Proyek Utama */
+.foto-profil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.daftar-belajar,
+.daftar-hobi,
+.daftar-edukasi {
+  background-color: #f9f9f9;
+  padding: 15px 15px 15px 35px;
+  border-left: 4px solid #3498db;  /* Akses garis vertikal biru */
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.daftar-belajar li,
+.daftar-hobi li,
+.daftar-edukasi li {
+  padding: 4px 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.daftar-belajar li:hover,
+.daftar-hobi li:hover,
+.daftar-edukasi li:hover {
+  color: #2980b9;
+  transform: translateX(5px);
+}
+
+/* =========================================================
+   7. STYLING TABEL & KARTU (index.html & projects.html)
+   ========================================================= */
+.tabel-blog,
 .tabel-projek {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 15px;          /* Jarak antar baris kartu */
+  border-spacing: 15px;
   margin-bottom: 25px;
 }
 
+.tabel-blog td,
 .tabel-projek td {
-  padding: 0;                      /* Dikendalikan oleh kartu-projek */
+  vertical-align: top;
 }
 
-.baris-abu .kartu-projek {
-  background-color: #f2f2f2;       /* Baris selang-seling abu-abu */
-}
-
+.kartu-blog,
 .kartu-projek {
   background-color: #ffffff;
-  border: 1px solid #ccc;          /* Box Model Border */
+  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;                   /* Box Model Padding */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi Halus */
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efek HOVER pada Kartu Proyek (Penugasan Wajib) */
+.kartu-blog:hover,
 .kartu-projek:hover {
-  transform: translateY(-4px);     /* Kartu sedikit terangkat */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12); /* Bayangan lembut */
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
+.kartu-blog img,
 .kartu-projek img {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
-  margin: 10px 0;
 }
 
-/* Menata 3 Gambar Figma Sejajar (Flexbox) */
+.baris-abu .kartu-projek {
+  background-color: #f9f9f9;
+}
+
 .foto-sejajar {
-  display: flex;                   /* Mode Flexbox dari Modul */
+  display: flex;                   /* Mode Flexbox */
   justify-content: center;
-  gap: 15px;                       /* Jarak antar foto */
-  flex-wrap: wrap;                 /* Agar rapi di layar HP */
+  gap: 15px;
+  flex-wrap: wrap;
   margin: 10px 0;
 }
 
 .foto-sejajar img {
-  height: 250px;                   /* Ukuran seragam untuk foto Figma */
+  height: 250px;
   width: auto;
 }
 
-/* =========================================
-   STYLING TABEL RINGKASAN (Summary Table)
-   ========================================= */
-.tabel-ringkasan {
-  width: 100%;
-  border-collapse: collapse;        /* Garis menyatu rapi */
-  margin-top: 15px;
-  background-color: white;
-}
-
-.tabel-ringkasan th, 
-.tabel-ringkasan td {
-  border: 1px solid #ccc;
-  padding: 10px;                   /* Box Model Padding */
-  text-align: center;
-}
-
-.tabel-ringkasan th {
-  background-color: #3498db;        /* Warna biru khas modul */
-  color: white;
-}
-
-.tabel-ringkasan .judul-tabel {
-  background-color: #2c3e50;        /* Warna biru gelap judul */
-}
-
-/* Penanda Status Proyek */
-.status-selesai {
-  background-color: #e8f8f5;
-  color: #27ae60;
-  font-weight: bold;
-}
-
-.status-proses {
-  background-color: #fef9e7;
-  color: #f39c12;
-  font-weight: bold;
-}
-
-/* =========================================
-   STYLING FORMULIR PESAN (contacts.html)
-   ========================================= */
-
-/* Tabel Form Utama */
+/* Tabel Ringkasan (Projects) & Biodata (About) */
+.tabel-ringkasan,
+.tabel-biodata,
 .tabel-form {
   width: 100%;
   max-width: 600px;
   margin: 0 auto 20px auto;
-  border-collapse: collapse;      /* Garis tabel menyatu rapi */
+  border-collapse: collapse;
   background-color: #ffffff;
-  border: 1px solid #ccc;         /* Box Model Border */
+  border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.tabel-form th, 
-.tabel-form td {
-  padding: 10px 15px;             /* Box Model Padding */
+.tabel-ringkasan th, .tabel-ringkasan td,
+.tabel-biodata th, .tabel-biodata td,
+.tabel-form th, .tabel-form td {
   border: 1px solid #eee;
+  padding: 10px;
   font-size: 14px;
 }
 
+.tabel-ringkasan th,
+.tabel-biodata th,
 .tabel-form .judul-form {
-  background-color: #3498db;       /* Warna biru khas modul */
+  background-color: #3498db;
   color: white;
   text-align: center;
-  font-size: 16px;
-  padding: 12px;
 }
 
+.tabel-biodata .label,
 .tabel-form .label {
   background-color: #f9f9f9;
   font-weight: bold;
   width: 35%;
 }
 
-/* Styling Input & Textarea */
+/* =========================================================
+   8. STYLING FORMULIR (contacts.html)
+   ========================================================= */
 .input-teks {
   width: 95%;
-  padding: 8px;                   /* Box Model Padding */
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-family: Arial, sans-serif;
@@ -294,20 +249,19 @@ img {
   background-color: #f9f9f9;
 }
 
-/* Styling Tombol Form */
 .tombol-kirim {
-  background-color: #3498db;       /* Warna tombol biru dari modul */
+  background-color: #3498db;
   color: white;
   border: none;
-  padding: 10px 20px;             /* Box Model Padding */
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi Halus Modul */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .tombol-reset {
-  background-color: #e74c3c;       /* Warna merah untuk reset */
+  background-color: #e74c3c;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -318,120 +272,12 @@ img {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Efek HOVER pada Tombol Form (Wajib Penugasan Modul) */
 .tombol-kirim:hover {
-  background-color: #2980b9;       /* Biru lebih gelap saat disorot */
-  transform: translateY(-2px);    /* Tombol naik sedikit */
-}
-
-.tombol-reset:hover {
-  background-color: #c0392b;       /* Merah lebih gelap saat disorot */
+  background-color: #2980b9;
   transform: translateY(-2px);
 }
 
-/* =========================================
-   STYLING HALAMAN PROFIL (about.html)
-   ========================================= */
-
-/* Tabel Biodata Pribadi */
-.tabel-biodata {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-  border-collapse: collapse;      /* Garis menyatu rapi */
-  background-color: #ffffff;
-  border: 1px solid #ccc;         /* Box Model Border */
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efek HOVER pada Tabel Biodata */
-.tabel-biodata:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.tabel-biodata th {
-  background-color: #3498db;       /* Warna biru dari modul */
-  color: white;
-  padding: 12px;                  /* Box Model Padding */
-  font-size: 16px;
-  text-align: center;
-}
-
-.tabel-biodata td {
-  padding: 10px 15px;             /* Box Model Padding */
-  border: 1px solid #eee;
-  font-size: 14px;
-}
-
-.tabel-biodata .label {
-  background-color: #f9f9f9;
-  font-weight: bold;
-  width: 35%;
-}
-
-/* Styling Daftar Hobi & Edukasi */
-.daftar-hobi, 
-.daftar-edukasi {
-  background-color: #f9f9f9;
-  padding: 15px 15px 15px 35px;   /* Box Model Padding */
-  border-left: 4px solid #3498db; /* Akses garis vertikal biru */
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-.daftar-hobi li, 
-.daftar-edukasi li {
-  padding: 4px 0;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-/* Efek HOVER pada List Item Hobi & Edukasi */
-.daftar-hobi li:hover, 
-.daftar-edukasi li:hover {
-  color: #2980b9;
-  transform: translateX(5px);     /* Teks geser ke kanan sedikit saat disorot */
-}
-
-/* =========================================
-   STYLING HALAMAN UTAMA (home.html)
-   ========================================= */
-
-/* Foto Profil dengan Dimensi & Hover Modul */
-.foto-profil {
-  width: 200px;                    /* Dimensi Width */
-  height: auto;
-  display: block;                  /* Agar bisa diposisikan ke tengah */
-  margin: 15px auto;               /* Box Model Margin Rata Tengah */
-  border-radius: 8px;              /* Lengkungan sudut */
-  border: 2px solid #ccc;          /* Box Model Border */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi Halus */
-}
-
-/* Efek HOVER pada Foto Profil (Tugas Wajib Modul) */
-.foto-profil:hover {
-  transform: scale(1.05);           /* Membesar sedikit dari contoh modul */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* Styling Daftar Pembelajaran */
-.daftar-belajar {
-  background-color: #f9f9f9;
-  padding: 15px 15px 15px 35px;   /* Box Model Padding */
-  border-left: 4px solid #3498db; /* Akses garis vertikal biru khas modul */
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-.daftar-belajar li {
-  padding: 4px 0;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-/* Efek HOVER pada Item Daftar */
-.daftar-belajar li:hover {
-  color: #2980b9;
-  transform: translateX(5px);     /* Geser kanan sedikit saat disorot */
+.tombol-reset:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
 }
