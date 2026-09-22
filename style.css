@@ -1,0 +1,104 @@
+/* =========================================================
+   1. ELEMENT SELECTOR & RESET DASAR (Selector Jenis 1)
+   ========================================================= */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; /* Tipografi */
+  background-color: #f4f6f9;               /* Warna Latar Website */
+  color: #333333;                          /* Warna Teks Utama */
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Grouping Selector (Selector Jenis 2) */
+h1, h2, h3 {
+  color: #1e293b;
+  text-align: center;
+}
+
+/* =========================================================
+   2. HOVER, TRANSITION & ANIMATION (Efek Interaktif)
+   ========================================================= */
+/* Animations @keyframes (Animasi Otomatis Modul) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terapkan Animasi pada Judul Utama */
+h1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* =========================================================
+   3. FLEXBOX UNTUK NAVIGASI (Menejemen Layout Navigasi)
+   ========================================================= */
+nav {
+  display: flex;                 /* Flex Container */
+  justify-content: center;       /* Rata Tengah Horisontal */
+  align-items: center;           /* Rata Tengah Vertikal */
+  gap: 15px;                     /* Jarak antar Link */
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;     /* Transisi Halus */
+}
+
+/* Efek HOVER pada Navigasi */
+nav a:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);    /* Efek terangkat sedikit */
+}
+
+/* =========================================================
+   4. BOX MODEL & CLASS SELECTOR (Selector Jenis 3)
+   ========================================================= */
+/* Class Selector untuk Kontainer/Kartu Konten */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  
+  /* Penerapan BOX MODEL lengkap */
+  padding: 25px;                  /* Padding (Jarak Dalam) */
+  border: 1px solid #e2e8f0;      /* Border (Bingkai) */
+  border-radius: 10px;            /* Sudut Membulat */
+  margin-bottom: 20px;            /* Margin (Jarak Luar) */
+}
+
+/* Styling Gambar agar Responsif & Rapi */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+}
+
+/* =========================================================
+   5. ID SELECTOR (Selector Jenis 4)
+   ========================================================= */
+#footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #64748b;
+  padding: 10px;
+}
