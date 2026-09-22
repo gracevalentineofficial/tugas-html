@@ -241,3 +241,156 @@ img {
   color: #f39c12;
   font-weight: bold;
 }
+
+/* =========================================
+   STYLING FORMULIR PESAN (contacts.html)
+   ========================================= */
+
+/* Tabel Form Utama */
+.tabel-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;      /* Garis tabel menyatu rapi */
+  background-color: #ffffff;
+  border: 1px solid #ccc;         /* Box Model Border */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabel-form th, 
+.tabel-form td {
+  padding: 10px 15px;             /* Box Model Padding */
+  border: 1px solid #eee;
+  font-size: 14px;
+}
+
+.tabel-form .judul-form {
+  background-color: #3498db;       /* Warna biru khas modul */
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.tabel-form .label {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  width: 35%;
+}
+
+/* Styling Input & Textarea */
+.input-teks {
+  width: 95%;
+  padding: 8px;                   /* Box Model Padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.area-tombol {
+  text-align: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+/* Styling Tombol Form */
+.tombol-kirim {
+  background-color: #3498db;       /* Warna tombol biru dari modul */
+  color: white;
+  border: none;
+  padding: 10px 20px;             /* Box Model Padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi Halus Modul */
+}
+
+.tombol-reset {
+  background-color: #e74c3c;       /* Warna merah untuk reset */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efek HOVER pada Tombol Form (Wajib Penugasan Modul) */
+.tombol-kirim:hover {
+  background-color: #2980b9;       /* Biru lebih gelap saat disorot */
+  transform: translateY(-2px);    /* Tombol naik sedikit */
+}
+
+.tombol-reset:hover {
+  background-color: #c0392b;       /* Merah lebih gelap saat disorot */
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   STYLING HALAMAN PROFIL (about.html)
+   ========================================= */
+
+/* Tabel Biodata Pribadi */
+.tabel-biodata {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;      /* Garis menyatu rapi */
+  background-color: #ffffff;
+  border: 1px solid #ccc;         /* Box Model Border */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek HOVER pada Tabel Biodata */
+.tabel-biodata:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tabel-biodata th {
+  background-color: #3498db;       /* Warna biru dari modul */
+  color: white;
+  padding: 12px;                  /* Box Model Padding */
+  font-size: 16px;
+  text-align: center;
+}
+
+.tabel-biodata td {
+  padding: 10px 15px;             /* Box Model Padding */
+  border: 1px solid #eee;
+  font-size: 14px;
+}
+
+.tabel-biodata .label {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  width: 35%;
+}
+
+/* Styling Daftar Hobi & Edukasi */
+.daftar-hobi, 
+.daftar-edukasi {
+  background-color: #f9f9f9;
+  padding: 15px 15px 15px 35px;   /* Box Model Padding */
+  border-left: 4px solid #3498db; /* Akses garis vertikal biru */
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.daftar-hobi li, 
+.daftar-edukasi li {
+  padding: 4px 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Efek HOVER pada List Item Hobi & Edukasi */
+.daftar-hobi li:hover, 
+.daftar-edukasi li:hover {
+  color: #2980b9;
+  transform: translateX(5px);     /* Teks geser ke kanan sedikit saat disorot */
+}

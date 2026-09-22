@@ -2,121 +2,114 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Grace Valentine</title>
+    <title>Contacts - Grace Valentine</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <h1><center>Personal Website</center></h1>
-    <center><strong>Contact</strong> me ⌯⌲🗪</center>
-    <nav>
-      <center>
-        <a href="home.html">HOME</a> |
-        <a href="about.html">ABOUT</a> |
-        <a href="projects.html">PROJECTS</a> |
-        <a href="contacts.html"><strong>CONTACTS</strong></a> |
+    <div id="header">
+      <h1>Personal Website</h1>
+      <p><strong>Contact</strong> me ⌯⌲🗪</p>
+
+      <nav class="menu">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="contacts.html"><strong>CONTACTS</strong></a>
         <a href="index.html">BLOGS</a>
-      </center>
+      </nav>
+    </div>
+
+    <div class="wadah">
+      <h2>Contact Information</h2>
+      <p>
+        If you would like to discuss or collaborate, please contact me using the form below.<br />
+        You can also send an email to
+        <a href="mailto:gracevalentine@student.upi.edu">gracevalentine@student.upi.edu</a>
+      </p>
+
+      <h2>Message Form</h2>
+      <form action="#" method="post">
+        <table class="tabel-form">
+          <thead>
+            <tr>
+              <th colspan="2" class="judul-form">Contact Information Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="label">Full Name</td>
+              <td class="input"><input type="text" name="nama" class="input-teks" /></td>
+            </tr>
+            <tr>
+              <td class="label">Email</td>
+              <td class="input"><input type="email" name="email" class="input-teks" /></td>
+            </tr>
+            <tr>
+              <td class="label">Phone Number</td>
+              <td class="input"><input type="number" name="phone" class="input-teks" /></td>
+            </tr>
+            <tr>
+              <td class="label">Gender</td>
+              <td class="input">
+                <input type="radio" name="gender" value="Laki-laki" />Laki-laki
+                <input type="radio" name="gender" value="Perempuan" />Perempuan
+              </td>
+            </tr>
+            <tr>
+              <td class="label">Date Birth</td>
+              <td class="input"><input type="date" name="db" class="input-teks" /></td>
+            </tr>
+            <tr>
+              <td class="label">Message Topic</td>
+              <td>
+                <select name="Topic" class="input-teks">
+                  <option value="Discussion">Discussion</option>
+                  <option value="Colaboration">Colaboration</option>
+                  <option value="Others">Others</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="label">Message Type</td>
+              <td class="input">
+                <input type="radio" name="message_type" value="Question" />Question
+                <input type="radio" name="message_type" value="Suggestion" />Suggestion
+                <input type="radio" name="message_type" value="Others" />Others
+              </td>
+            </tr>
+            <tr>
+              <td class="label">Message</td>
+              <td class="textarea">
+                <textarea name="message" rows="5" class="input-teks"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td class="label">Copy of the Message</td>
+              <td class="input">
+                <input type="checkbox" name="check" value="check" />Send a copy of the message to my email
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="area-tombol">
+                <input type="submit" value="Send Message" class="tombol-kirim" />
+                <input type="reset" value="Reset" class="tombol-reset" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+
+      <p>
+        <em>Note: Since this website uses only HTML, the form is not yet connected to a server/database.</em>
+      </p>
+
       <br />
-      <hr />
-    </nav>
-    <h2>Contact Information</h2>
-    <p>
-      If you would like to discuss or collaborate, please contact me using the
-      form below.<br />
-      You can also send an email to
-      <a href="mailto:gracevalentine@student.upi.edu"
-        >gracevalentine@student.upi.edu</a
-      >
-    </p>
-    <h2>Message Form</h2>
-    <form action="#" method="post">
-      <table border="1" cellspacing="0" cellpadding="5" width="50%">
-        <thead>
-          <tr style="text-align: center">
-            <th colspan="2">Contact Information Form</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="label">Full Name</td>
-            <td class="input"><input type="text" name="nama" /></td>
-          </tr>
-          <tr>
-            <td class="label">Email</td>
-            <td class="input"><input type="email" name="email" /></td>
-          </tr>
-          <tr>
-            <td class="label">Phone Number</td>
-            <td class="input"><input type="number" name="phone" /></td>
-          </tr>
-          <tr>
-            <td class="label">Gender</td>
-            <td class="input">
-              <input type="radio" name="gender" value="Laki-laki" />Laki-laki
-              <input type="radio" name="gender" value="Perempuan" />Perempuan
-            </td>
-          </tr>
-          <tr>
-            <td class="label">Date Birth</td>
-            <td class="input"><input type="date" nama="db" /></td>
-          </tr>
-          <tr>
-            <td class="label">Message Topic</td>
-            <td>
-              <select name="Topic">
-                <option value="Discussion">Discussion</option>
-                <option value="Colaboration">Colaboration</option>
-                <option value="Others">Others</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">Message Type</td>
-            <td class="input">
-              <input
-                type="radio"
-                name="message_type"
-                value="Question"
-              />Question
-              <input
-                type="radio"
-                name="message_type"
-                value="Suggestion"
-              />Suggestion
-              <input type="radio" name="message_type" value="Others" />Others
-            </td>
-          </tr>
-          <tr>
-            <td class="label">Message</td>
-            <td class="textarea">
-              <textarea name="message" rows="5" cols="33"></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td class="label">Copy of the Message</td>
-            <td class="input">
-              <input type="checkbox" name="check" value="check" />Send a copy of
-              the message to my email
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">
-              <input type="submit" value="Send Message" />
-              <input type="reset" value="Reset" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-    <p>
-      <em
-        >Note: Since this website uses only HTML, the form is not yet connected
-        to a server/database.</em
-      >
-    </p>
-    <hr />
-    <a href="home.html">Back to HOME</a><br /><br />
-    © 2026 Grace Valentine.
+      <a href="home.html">Back to HOME</a>
+    </div>
+
+    <div id="footer">
+      © 2026 Grace Valentine.
+    </div>
   </body>
 </html>
