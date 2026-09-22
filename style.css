@@ -107,7 +107,6 @@ img {
    STYLING TABEL & KARTU BLOG
    ========================================= */
 
-/* Mengatur Tabel agar Rata Tengah dan Punya Jarak */
 .tabel-blog {
   width: 100%;
   margin: 0 auto 30px auto;
@@ -147,4 +146,98 @@ img {
 .kartu-blog:hover {
   transform: translateY(-5px);     /* Terangkat sedikit */
   box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Bayangan lembut */
+}
+
+/* =========================================
+   STYLING KHUSUS PROYEK (projects.html)
+   ========================================= */
+
+/* Tabel Proyek Utama */
+.tabel-projek {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;          /* Jarak antar baris kartu */
+  margin-bottom: 25px;
+}
+
+.tabel-projek td {
+  padding: 0;                      /* Dikendalikan oleh kartu-projek */
+}
+
+.baris-abu .kartu-projek {
+  background-color: #f2f2f2;       /* Baris selang-seling abu-abu */
+}
+
+.kartu-projek {
+  background-color: #ffffff;
+  border: 1px solid #ccc;          /* Box Model Border */
+  border-radius: 8px;
+  padding: 20px;                   /* Box Model Padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi Halus */
+}
+
+/* Efek HOVER pada Kartu Proyek (Penugasan Wajib) */
+.kartu-projek:hover {
+  transform: translateY(-4px);     /* Kartu sedikit terangkat */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12); /* Bayangan lembut */
+}
+
+.kartu-projek img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+/* Menata 3 Gambar Figma Sejajar (Flexbox) */
+.foto-sejajar {
+  display: flex;                   /* Mode Flexbox dari Modul */
+  justify-content: center;
+  gap: 15px;                       /* Jarak antar foto */
+  flex-wrap: wrap;                 /* Agar rapi di layar HP */
+  margin: 10px 0;
+}
+
+.foto-sejajar img {
+  height: 250px;                   /* Ukuran seragam untuk foto Figma */
+  width: auto;
+}
+
+/* =========================================
+   STYLING TABEL RINGKASAN (Summary Table)
+   ========================================= */
+.tabel-ringkasan {
+  width: 100%;
+  border-collapse: collapse;        /* Garis menyatu rapi */
+  margin-top: 15px;
+  background-color: white;
+}
+
+.tabel-ringkasan th, 
+.tabel-ringkasan td {
+  border: 1px solid #ccc;
+  padding: 10px;                   /* Box Model Padding */
+  text-align: center;
+}
+
+.tabel-ringkasan th {
+  background-color: #3498db;        /* Warna biru khas modul */
+  color: white;
+}
+
+.tabel-ringkasan .judul-tabel {
+  background-color: #2c3e50;        /* Warna biru gelap judul */
+}
+
+/* Penanda Status Proyek */
+.status-selesai {
+  background-color: #e8f8f5;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.status-proses {
+  background-color: #fef9e7;
+  color: #f39c12;
+  font-weight: bold;
 }
